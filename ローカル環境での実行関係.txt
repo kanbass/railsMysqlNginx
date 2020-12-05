@@ -1,0 +1,3 @@
+srcディレクトリに移動する。
+cd ../ && docker-compose up -d
+でサーバーの起動
