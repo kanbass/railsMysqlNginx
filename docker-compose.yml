@@ -13,6 +13,8 @@ services:
       - log-data:/webapp/log
     depends_on:
       - db
+    ports:
+      - 3000:3000
   db:
     image: mysql:5.7
     env_file:

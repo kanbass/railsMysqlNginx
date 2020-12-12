@@ -1,0 +1,13 @@
+まずはDockerイメージを作成しよう
+docker-compose build
+docker-compose up -d
+docker commit rails_webのコンテナID rails_web_minikube
+docker commit rails_appのコンテナID rails_app_minikube
+docker commit mysql:5.7のコンテナID rails_db_minikube
+docker tag rails_web_minikube kambe/rails_web_minikube
+docker tag rails_app_minikube kambe/rails_app_minikube
+docker tag rails_db_minikube kambe/rails_db_minikube
+docker push kambe/rails_web_minikube
+docker push kambe/rails_app_minikube
+docker push kambe/rails_db_minikube
+ん？dbはいらなくね？とりあえず保留

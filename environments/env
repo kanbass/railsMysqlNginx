@@ -1,3 +1,4 @@
 MYSQL_ROOT_PASSWORD=rootP@ssw0rd
 MYSQL_USER=RailsUser
 MYSQL_PASSWORD=RailsP@ssw0rd
+DB_HOST=db
